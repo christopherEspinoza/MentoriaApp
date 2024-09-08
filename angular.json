@@ -31,9 +31,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/styles/botton.scss",
+              "src/assets/styles/button.scss",
               "src/assets/styles/input.scss",
-              "src/assets/styles/table.scss"
+              "src/assets/styles/table.scss",
+              "src/assets/fonts/roboto.scss"
+
             ],
             "scripts": []
           },

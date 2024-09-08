@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+
+<div class="form">
+    <div class="form-item">
+        <label for="input-identificacion">Identificación:</label>
+        <input id='input-identificacion' type="text" [(ngModel)]="persona.identificacion">
+    </div>
+    <div class="form-item">
+        <label for="input-nombre">Nombre:</label>
+        <input id='input-nombre' type="text" class="w-4" [(ngModel)]="persona.nombre">
+    </div>
+    <div class="form-item">
+        <label for="input-direccion">Dirección:</label>
+        <input id='input-direccion' type="text" class="w-6" [(ngModel)]="persona.direccion">
+    </div>
+
+    <div class="form-item">
+        <label for="select-estado">Estado:</label>
+        <select name="estado" id="select-estado" [(ngModel)]="persona.estado">
+            <option value="A">Activo</option>
+            <option value="I">Inactivo</option>
+          </select>
+    </div>
+
+    <div class="align_action_button mr-10">
+        <button class="btn new" (click)="savePersona()">Guardar</button>
+    </div>
+</div>
+

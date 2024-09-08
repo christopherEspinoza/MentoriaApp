@@ -1,23 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
+import { CreateOrEditPersonaComponent } from './modules/personas/create-or-edit-person/create-or-edit-persona.component';
+import { ListPersonComponent } from './modules/personas/list-person/list-person.component';
 
 const routes: Routes = [
   { 
     path: '',
-    redirectTo: '/seguridad/login',
+    redirectTo: 'listado',
     pathMatch: 'full',
   },
-  {
-    path:'',
-    component: MainLayoutComponent,
-    children:[
-      { 
-        path: 'seguridad', 
-        loadChildren: () => import('./modules/seguridad/seguridad.module').then(m => m.SeguridadModule) 
-      },
-    ]
+  { 
+    path: 'listado', 
+    component: ListPersonComponent
   },
+  { 
+    path: 'editar/:id', 
+    component: CreateOrEditPersonaComponent
+  },
+  { 
+    path: 'nuevo/:id', 
+    component: CreateOrEditPersonaComponent
+  }
 ];
 
 @NgModule({

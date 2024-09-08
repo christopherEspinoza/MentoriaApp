@@ -3,24 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
-import { PopupInformationComponent } from './shared/components/popup-information/popup-information.component';
-import { PopupConfirmationComponent } from './shared/components/popup-confirmation/popup-confirmation.component';
-import { PopupErrorComponent } from './shared/components/popup-error/popup-error.component';
-import { SeguridadModule } from './modules/seguridad/seguridad.module';
+import { CreateOrEditPersonaComponent } from './modules/personas/create-or-edit-person/create-or-edit-persona.component';
+import { ListPersonComponent } from './modules/personas/list-person/list-person.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainLayoutComponent,
-    PopupInformationComponent,
-    PopupConfirmationComponent,
-    PopupErrorComponent
+    CreateOrEditPersonaComponent,
+    ListPersonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SeguridadModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

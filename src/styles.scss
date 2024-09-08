@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --color_white: #ffffff;
+    --primary-color: #2d63c8;
+    --color-sucess: #2dc873;
+    --color-error: #c82d2d;    
+    --font-size: 19px;
+}
+
+.align_action_button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.w-1{
+    width: 10%;
+}
+
+.w-2{
+    width: 15%;
+}
+.w-3{
+    width: 20%;
+}
+
+.w-4{
+    width: 30%;
+}
+.w-5{
+    width: 40%;
+}
+.w-6{
+    width: 50%;
+}
+
+.mr-10{
+    margin-top: 10px;
+}
